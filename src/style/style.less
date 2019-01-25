@@ -1,0 +1,51 @@
+@tab-color: #412122;
+@tab-text-color: #f37e44;
+@color-white: #ffffff;
+/* 底部导航栏 */
+.mint-tabbar > .mint-tab-item.is-selected {
+  background-color: transparent;
+  color: @tab-text-color;
+}
+/* 顶部轮播图焦点 */
+.mint-swipe-indicator {
+  background: @color-white;
+  opacity: 0.8;
+}
+.mint-swipe-indicator.is-active {
+  background: @tab-text-color;
+  opacity: 1;
+}
+.mint-tab-container {
+  box-sizing: border-box;
+  height: 100%;
+  // padding-top: 40px;
+  // padding-bottom: 55px;
+  overflow: auto;
+  overflow-x: hidden !important;
+  -webkit-overflow-scrolling: touch;
+}
+/* 返回箭头 */
+.mintui-back {
+  font-size: 18px;
+}
+/* cell */
+.mint-cell {
+  background: transparent;
+}
+.mint-cell:last-child {
+  background: transparent;
+}
+.mint-cell-wrapper {
+  background: transparent;
+}
+.mint-cell-value {
+  color: #c0c0c0;
+  font-size: 14px;
+}
+.mint-cell-allow-right::after {
+  border: solid 1px #c8c8cd;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  width: 8px;
+  height: 8px;
+}
